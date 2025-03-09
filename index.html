@@ -41,7 +41,7 @@
     <script>
         async function fetchNews() {
             try {
-                let response = await fetch('https://newsapi.org/v2/top-headlines?country=tr&apiKey=bce0d094057b4ca9b0d0086fa05d68a1');
+                let response = await fetch('https://newsapi.org/v2/top-headlines?category=technology&language=en&apiKey=bce0d094057b4ca9b0d0086fa05d68a1');
                 let data = await response.json();
                 let newsContainer = document.getElementById('news');
                 newsContainer.innerHTML = '';
